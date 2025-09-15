@@ -35,7 +35,7 @@ make seed
 # Остановка
 make down
 ```
-API доступно по адресу http://localhost:3000
+API доступно по адресу http://localhost:3000<br>
 Документация Swagger по адресу http://localhost:3000/docs
 ### Остановка
 ```bash
