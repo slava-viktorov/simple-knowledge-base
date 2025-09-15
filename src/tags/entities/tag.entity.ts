@@ -12,7 +12,7 @@ import {
 } from 'typeorm';
 import { Article } from '../../articles/entities/article.entity';
 
-@Index('idx_tags_name', ['name'])
+@Index('idx_tags_name', ['name'], { unique: true })
 @Entity('tags')
 export class Tag {
   @PrimaryGeneratedColumn('uuid')
