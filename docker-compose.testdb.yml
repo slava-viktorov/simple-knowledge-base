@@ -1,0 +1,22 @@
+services:
+  db_test:
+    image: postgres
+    restart: on-failure
+    shm_size: 128mb
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE_TEST}
+    ports:
+      - ${DB_PORT_TEST}:5432
+    volumes:
+      - pgdata_test:/var/lib/postgresql/data
+    networks:
+      - app_network
+
+volumes:
+  pgdata_test:
+
+networks:
+  app_network:
+    driver: bridge
