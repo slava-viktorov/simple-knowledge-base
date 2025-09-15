@@ -1,6 +1,6 @@
 # Simple Knowledge Base
 
-Простое приложение "База знаний"
+Простое API приложения "База знаний"
 
 ## Технологии
 
@@ -35,7 +35,7 @@ make seed
 # Остановка
 make down
 ```
-Приложение доступно по адресу http://localhost:3001/items
+API доступно по адресу http://localhost:3000
 Документация Swagger по адресу http://localhost:3000/docs
 ### Остановка
 ```bash
